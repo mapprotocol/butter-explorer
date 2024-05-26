@@ -8,7 +8,7 @@ import { fetchQueryCrossList } from '@/common/api/api';
 
 
 
-const Transactions = () => {
+const TransactionsDetail = () => {
 
    
    
@@ -27,4 +27,4 @@ const Transactions = () => {
     )
 }
 
-export default Transactions;
+export default TransactionsDetail;

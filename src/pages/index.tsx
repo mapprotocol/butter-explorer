@@ -114,7 +114,12 @@ export default function Home() {
                 color: '#000',
                 fontWeight: 600,
                 cursor: 'pointer'
-              }}>
+              }}
+                onClick={() => {
+                  location.href = 'https://www.butternetwork.io/en'
+
+                }}
+              >
                 ButterNetwork
                 <Image
                   height={12}
@@ -168,7 +173,7 @@ export default function Home() {
                 </text>
 
               </div>
-              <BarChart data={chartData.sourceChain[type]}  type={"Source Chain Messages"}/>
+              <BarChart data={chartData.sourceChain[type]} type={"Source Chain Messages"} />
             </div>
             <div className={styles.chartItem}>
               <div className={styles.chartTitle}>
@@ -178,7 +183,7 @@ export default function Home() {
                   {chartData.toChainTransferCountAll[type].toLocaleString()}
                 </text>
               </div>
-              <BarChart data={chartData.toChain[type]}  type={"Destination Chain Messages"}/>
+              <BarChart data={chartData.toChain[type]} type={"Destination Chain Messages"} />
             </div>
           </div>
           <div className={styles.chartsShadow}></div>
