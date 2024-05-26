@@ -1,0 +1,92 @@
+.header {
+    position: sticky;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    background: #F9F9F9;
+    padding-left: 48px;
+    padding-right: 48px;
+    top: 0;
+    height: 68px;
+    justify-content: space-between;
+    z-index: 100;
+    user-select: none;
+}
+
+.headerLeft {
+    align-items: center;
+
+    gap: 32px;
+    display: flex;
+
+}
+.shadow {
+    height: 64px;
+    transition: height 0.4s;
+    transition-timing-function: ease-in;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.input {
+    border-radius: 6px;
+    border: 1px solid #7C7C7C;
+    background: #FFF;
+    cursor: pointer;
+    width: 500px;
+    height: 30px;
+    flex-shrink: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sreach {
+    background-color: #FABE00;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContent {
+    border: none;
+    width: 452px;
+    font-size: 14px;
+}
+
+.inputContent:focus {
+    outline: none;
+
+}
+
+.headerRight {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 32px;
+}
+
+.rightItem {
+    cursor: pointer;
+
+}
+
+@media (max-width: 1288px) {
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+}

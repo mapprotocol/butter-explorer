@@ -1,0 +1,8 @@
+tbody tr {
+    border: 1px solid #fac000 !important;
+}
+
+.mantine-Pagination-control:where([data-active]){
+    background-color: #FABE00;
+    border-color: #FABE00;
+}
