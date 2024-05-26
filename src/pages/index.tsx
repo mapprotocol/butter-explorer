@@ -194,9 +194,7 @@ export default function Home() {
         </div>
         <div className={styles.supported}>
           <div className={styles.supportedContent}>
-            <div className={styles.supportedTitle}>
-              {'Supported Network'}
-            </div>
+            
             <div className={styles.chains}>
               {totalData.supportChainList.map((item, index) => <div className={styles.chain} key={index}>
                 <img

@@ -80,7 +80,7 @@
 
 .supported {
     margin-top: 12px;
-    height: 153px;
+    height: 100px;
 
     position: relative;
 }
@@ -138,7 +138,7 @@
 
 
 .chains {
-    margin-top: 24px;
+    margin-top: 32px;
     display: inline-flex;
     gap: 32px;
     white-space: nowrap;

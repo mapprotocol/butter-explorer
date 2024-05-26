@@ -92,7 +92,7 @@
     gap: 6px;
 }
 .statusTag{
-   
+    margin-left: 32px;
     border-radius: 12px;
     background: #FABE00;
     display: inline-flex;

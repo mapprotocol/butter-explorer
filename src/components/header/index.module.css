@@ -21,8 +21,7 @@
 
 }
 .shadow {
-    height: 64px;
-    transition: height 0.4s;
+    height: 68px;
     transition-timing-function: ease-in;
 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
