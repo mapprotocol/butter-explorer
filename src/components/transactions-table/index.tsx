@@ -31,20 +31,13 @@ const states = [
     {
         id: 3,
         color: '#FABE00',
-        label: 'Pending',
+        label: 'Initiated',
 
     },
     {
         id: 1,
         color: '#57CE7F',
         label: 'Complete',
-
-    },
-    {
-
-        id: 4,
-        color: '#E45F5F',
-        label: 'Failed',
 
     },
    
@@ -146,10 +139,10 @@ const TransactionsTable = ({ initSize }) => {
                             value={status}
                             styles={selectStyles}
                             data={[{ value: '', label: 'ALL' },
-                            { value: '0', label: 'Pending' },
+                            { value: '0', label: 'Initiated' },
                             { value: '1', label: 'Complete' },
-                            { value: '2', label: 'Failed' },
-                            { value: '3', label: 'In Progress' },
+                            { value: '2', label: 'In Progress' }
+
                             ]}
                             onChange={setStatus}
 
