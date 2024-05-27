@@ -26,7 +26,7 @@ export const fetchQueryCrossList = async (page, size, sourceChainId, destination
             ...(sourceChainId  ? { sourceChainId } : {}),
 
             ...(destinationChainId  ? { destinationChainId } : {}),
-            ...(status  ? { sttus:status } : {})
+            ...(status  ? { status } : {})
 
         }).toString();
         const response = await api.get(`/queryCrossList?${queryParameters}`);

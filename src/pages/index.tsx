@@ -65,14 +65,14 @@ export default function Home() {
           <div className={styles.totalDataContent}>
             <div className={styles.totalItem}>
               <div className={styles.totalItemTitle}>
-                total messages
-                <Tooltip label="total messages">
+                Total Messages
+                {/* <Tooltip label="total messages">
                   <Image
                     height={12}
                     width={12}
                     src={`/icon/tip.svg`}
                     alt="map" />
-                </Tooltip>
+                </Tooltip> */}
               </div>
               <div className={styles.totalItemValue}>
                 {Number(totalData.totalMessages).toLocaleString()}
@@ -81,13 +81,13 @@ export default function Home() {
             <div className={styles.totalItem}>
               <div className={styles.totalItemTitle}>
                 24H Messages
-                <Tooltip label="24H Messages">
+                {/* <Tooltip label="24H Messages">
                   <Image
                     height={12}
                     width={12}
                     src={`/icon/tip.svg`}
                     alt="map" />
-                </Tooltip>
+                </Tooltip> */}
               </div>
               <div className={styles.totalItemValue}>
                 {Number(totalData.messageOf24Hours).toLocaleString()}
@@ -96,16 +96,16 @@ export default function Home() {
             <div className={styles.totalItem}>
               <div className={styles.totalItemTitle}>
                 Supported Networks
-                <Tooltip label="24H Messages">
+                {/* <Tooltip label="24H Messages">
                   <Image
                     height={12}
                     width={12}
                     src={`/icon/tip.svg`}
                     alt="map" />
-                </Tooltip>
+                </Tooltip> */}
               </div>
               <div className={styles.totalItemValue}>
-                {totalData.supportChainTotal.toLocaleString()}
+                {Number(totalData.supportChainTotal).toLocaleString()}
               </div>
             </div>
             <div className={styles.totalItem} >
@@ -140,7 +140,7 @@ export default function Home() {
         <div className={styles.tabs}>
           <div className={styles.tab} onClick={() => { setType(0) }} style={{ color: type == 0 ? '#FABE00' : '#7C7C7C' }}>{'Last 7 days'}</div>
           <div className={styles.tab} onClick={() => { setType(1) }} style={{ color: type == 1 ? '#FABE00' : '#7C7C7C' }}>{'Last 30 days'}</div>
-          <div className={styles.tab} onClick={() => { setType(2) }} style={{ color: type == 2 ? '#FABE00' : '#7C7C7C' }}>{'All-Time'}</div>
+          <div className={styles.tab} onClick={() => { setType(2) }} style={{ color: type == 2 ? '#FABE00' : '#7C7C7C' }}>{'Last 12 months'}</div>
         </div>
         <div className={styles.charts}>
           <div className={styles.chartsContent}>

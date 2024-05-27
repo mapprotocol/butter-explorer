@@ -42,7 +42,7 @@ const Header = () => {
                         alt="map" />
                 </div>
                 <div className={styles.input}>
-                    <input className={styles.inputContent} type="text" placeholder='Search by Tx Hash / Address / VAA ID' />
+                    <input className={styles.inputContent} type="text" placeholder='Search by Tx Hash / Address' />
                     <div className={styles.sreach}>
                         <Image
                             height={14}
@@ -54,7 +54,7 @@ const Header = () => {
             </div>
             <div className={styles.headerRight}>
                 <div className={styles.rightItem} style={{ color: '#FABE00' }} onClick={()=>{
-                    window.open('https://www.butterswap.io/dashboard')
+                   router.push('/')
                 }} >
                     Dashboard
                 </div>

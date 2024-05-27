@@ -140,20 +140,21 @@ const TransactionsTable = ({ initSize }) => {
                             onChange={setDestination}
                         />
                     </div>
-                    {/* <div className={styles.status}>
+                    <div className={styles.status}>
                         <Select
                             label="Status"
                             value={status}
                             styles={selectStyles}
-                            data={[{ value: '0', label: '0' },
-                            { value: '1', label: '1' },
-                            { value: '2', label: '2' },
-                            { value: '3', label: '3' },
+                            data={[{ value: '', label: 'ALL' },
+                            { value: '0', label: 'Pending' },
+                            { value: '1', label: 'Complete' },
+                            { value: '2', label: 'Failed' },
+                            { value: '3', label: 'In Progress' },
                             ]}
                             onChange={setStatus}
 
                         />
-                    </div> */}
+                    </div>
                 </div>
             </div>
             <div className={styles.transactions}>
