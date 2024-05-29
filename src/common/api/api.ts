@@ -47,3 +47,14 @@ export const fetchQueryCharData = async () => {
         throw error;
     }
 };
+
+
+export const fetchQueryCrossInfoById = async (id) => {
+    try {
+        const response = await api.get(`/queryCrossInfoById?id=${id}`);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching query statistics:', error.response?.data || error.message);
+        throw error;
+    }
+};

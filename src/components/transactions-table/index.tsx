@@ -11,6 +11,7 @@ import useTablePageChange from "@/common/hooks/useTablePageChange";
 import { useNextQueryParam } from "@/common/hooks/useNextQueryParam";
 import { fetchQueryCrossList, fetchQueryStatistics } from "@/common/api/api";
 import { ellipsis } from "@/common/utils/utils";
+import StatusTag from "../tag";
 const selectStyles = (theme) => ({
 
     input: {
@@ -20,6 +21,7 @@ const selectStyles = (theme) => ({
 
 })
 const TransactionTableFields = [
+    "Id",
     "Status",
     "Source Hash",
     "From",
@@ -164,19 +166,23 @@ const TransactionsTable = ({ initSize }) => {
                         </thead>
                         <tbody>
                             {list.map((element, index) => (
-                                <tr className={styles.trBody} key={index}>
+                                <tr className={styles.trBody}
+                                
+                                   
+                                key={index}>
+                                     <td >
+                                    <div style={{marginLeft:'12px',cursor:'pointer',fontWeight:"600", color:'#FABE00'}}
+                                     onClick={()=>{
+                                        router.push('/transaction-detail?id='+element.id)
+                                    }
+                                    }>
+                                       {element.id}
+                                       </div>
+                                    </td>
                                     <td >
-                                        <div className="">
-                                            <div className={styles.statusTag}
-                                                style={{ backgroundColor: states[Number(element.state)].color }}>
-                                                <Image
-                                                    height={14}
-                                                    width={14}
-                                                    src={`icon/state${states[Number(element.state)].id}.svg`}
-                                                    alt="map"></Image>
-                                                {states[Number(element.state)].label}
-                                            </div>
-                                        </div>
+                                       
+                                        <StatusTag state={element.state} />
+                                       
                                     </td>
                                     <td >
                                         <div className={styles.addressTd}>
@@ -189,6 +195,7 @@ const TransactionsTable = ({ initSize }) => {
                                             <Image
                                                 onClick={() => {
                                                     copy(element.sourceHash)
+                                                    event.stopPropagation();
                                                 }}
                                                 style={{
                                                     cursor: 'pointer'
@@ -205,6 +212,7 @@ const TransactionsTable = ({ initSize }) => {
                                             <Image
                                                 onClick={() => {
                                                     copy(element.sourceAddress)
+                                                    event.stopPropagation();
                                                 }}
                                                 style={{
                                                     cursor: 'pointer'
@@ -226,6 +234,7 @@ const TransactionsTable = ({ initSize }) => {
                                             <Image
                                                 onClick={() => {
                                                     copy(element.destinationHash)
+                                                    event.stopPropagation();
                                                 }}
                                                 style={{
                                                     cursor: 'pointer'

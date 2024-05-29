@@ -83,7 +83,6 @@
     line-height: normal;
 
 
-
 }
 
 .addressTd {
@@ -91,17 +90,7 @@
     align-items: center;
     gap: 6px;
 }
-.statusTag{
-    margin-left: 32px;
-    border-radius: 12px;
-    background: #FABE00;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 12px;
-    color: #fff;
-    gap: 6px;
-}
+
 
 .trBody {
     transition: all 0.2s linear;

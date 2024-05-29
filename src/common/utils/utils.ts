@@ -9,3 +9,15 @@ export function ellipsis(value: string): string {
     }
     return value;
   }
+
+  export  function openLink(chainName, value, type, explorer) {
+
+    if (explorer) {
+        
+        const url = `${explorer}${type}/${value}`;
+
+        window.open(url, '_blank');
+    } else {
+        console.error("Invalid parameters.");
+    }
+}
