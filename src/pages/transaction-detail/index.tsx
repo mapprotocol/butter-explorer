@@ -132,14 +132,14 @@ const TransactionsDetail = () => {
                                     {data?.sourceInfo?.timestamp}
                                 </div>
                             </div>
-                            <div className={styles.item}>
+                            {/* <div className={styles.item}>
                                 <div className={styles.itemTitle}>
                                     {"Interacted Protocol :"}
                                 </div>
                                 <div className={styles.itemValue}>
                                     { }
                                 </div>
-                            </div>
+                            </div> */}
                             <div className={styles.item}>
                                 <div className={styles.itemTitle}>
                                     {"Contract Address :"}
@@ -180,14 +180,14 @@ const TransactionsDetail = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.data}>
+                        {/* <div className={styles.data}>
                             <div className={styles.itemTitle}>
                                 {"Proofdata Generated :"}
                             </div>
                             <div className={styles.itemValue}>
                                 { }
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className={styles.sourceChain}>
@@ -288,13 +288,13 @@ const TransactionsDetail = () => {
                                     {data?.relyerInfo?.timestamp}
                                 </div>
                             </div>
-                            <div className={styles.item}>
+                            {/* <div className={styles.item}>
                                 <div className={styles.itemTitle}>
                                     {"Interacted Protocol :"}
                                 </div>
                                 <div className={styles.itemValue}>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className={styles.item}>
                                 <div className={styles.itemTitle}>
                                     {"Contract Address :"}
@@ -344,14 +344,14 @@ const TransactionsDetail = () => {
 
                             </div>
                         </div>
-                        <div className={styles.data}>
+                        {/* <div className={styles.data}>
                             <div className={styles.itemTitle}>
                                 {"Proofdata Generated :"}
                             </div>
                             <div className={styles.itemValue}>
                                 { }
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className={styles.sourceChain}>
@@ -452,14 +452,14 @@ const TransactionsDetail = () => {
                                     {data?.destinationInfo?.timestamp}
                                 </div>
                             </div>
-                            <div className={styles.item}>
+                            {/* <div className={styles.item}>
                                 <div className={styles.itemTitle}>
                                     {"Interacted Protocol :"}
                                 </div>
                                 <div className={styles.itemValue}>
                                     { }
                                 </div>
-                            </div>
+                            </div> */}
                             <div className={styles.item}>
                                 <div className={styles.itemTitle}>
                                     {"Contract Address :"}
@@ -500,14 +500,14 @@ const TransactionsDetail = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.data}>
+                        {/* <div className={styles.data}>
                             <div className={styles.itemTitle}>
                                 {"Proofdata Generated :"}
                             </div>
                             <div className={styles.itemValue}>
                                 { }
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className={styles.detailshadow}>

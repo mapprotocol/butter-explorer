@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <div className={fade}>
             <div className={styles.headerLeft}>
-                <div onClick={() => {
+                <div className={styles.logo} onClick={() => {
                     router.push('/')
                 }}>
                     <Image

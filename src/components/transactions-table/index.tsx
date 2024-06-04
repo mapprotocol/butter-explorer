@@ -113,7 +113,7 @@ const TransactionsTable = ({ initSize }) => {
                     {'Transactions'}
                 </div>
                 <div className={styles.titleRight}>
-                    <div className={styles.sourceChain}>
+                    <div className={styles.selectItem}>
                         <Select
                             label="Source Chain"
                             value={source}
@@ -126,7 +126,7 @@ const TransactionsTable = ({ initSize }) => {
                             onChange={setSource}
                         />
                     </div>
-                    <div className={styles.destinationChain}>
+                    <div className={styles.selectItem}>
                         <Select
                             label="Destination Chain"
                             value={destination}
@@ -135,7 +135,7 @@ const TransactionsTable = ({ initSize }) => {
                             onChange={setDestination}
                         />
                     </div>
-                    <div className={styles.status}>
+                    <div className={styles.selectItem}>
                         <Select
                             label="Status"
                             value={status}

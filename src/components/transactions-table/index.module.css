@@ -11,7 +11,7 @@
     z-index: 10;
     width: 100%;
     border: 1px solid #7C7C7C;
-
+    overflow-x: scroll;
     border-radius: 12px;
     background-color: white;
     justify-content: space-between;
@@ -50,6 +50,7 @@
 }
 
 .ttable {
+    min-width: 1100px;
     border-spacing: 0 10px;
     border-collapse: separate;
 }
@@ -104,3 +105,17 @@
     background: #fac00010;
 }
 
+@media (max-width: 800px) {
+    .title {
+     flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .selectItem{
+        width: 44%;
+    }
+    .titleRight{
+        flex-wrap: wrap;
+    }
+   
+}

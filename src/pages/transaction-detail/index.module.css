@@ -133,4 +133,28 @@
         margin-right: 24px;
 
     }
+    .item{
+        width: 100%;
+        flex-direction: column;
+    }
+   
+}
+
+
+
+@media (max-width: 800px) {
+    .body {
+        margin-left: 12px;
+        margin-right: 12px;
+
+    }
+    .item{
+        flex-basis: 100%;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .itemTitle{
+width: 100%;
+
+    }
 }

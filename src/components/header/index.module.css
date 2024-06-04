@@ -1,6 +1,5 @@
 .header {
     position: sticky;
-    height: 64px;
     display: flex;
     align-items: center;
     background: #F9F9F9;
@@ -20,6 +19,7 @@
     display: flex;
 
 }
+
 .shadow {
     height: 68px;
     transition-timing-function: ease-in;
@@ -33,7 +33,7 @@
     border: 1px solid #7C7C7C;
     background: #FFF;
     cursor: pointer;
-    width: 500px;
+    max-width: 500px;
     height: 30px;
     flex-shrink: 0;
     padding-left: 6px;
@@ -88,4 +88,21 @@
 
     }
 
+}
+
+@media (max-width: 800px) {
+    .header{
+        height: 108px;
+    }
+   .headerRight{
+    display: none;
+   }
+    .headerLeft {
+        gap: 6px;
+        flex-direction: column;
+    }
+    
+    .inputContent{
+        width: 80vw;
+    }
 }
