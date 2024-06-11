@@ -33,10 +33,10 @@ const StatusTag = ({ state }) => {
             <Image
                 height={14}
                 width={14}
-                src={`icon/state${stateInfo.id}.svg`}
+                src={`icon/state${stateInfo?.id}.svg`}
                 alt="map"
             />
-            {stateInfo.label}
+            {stateInfo?.label}
         </div>
     );
 };
