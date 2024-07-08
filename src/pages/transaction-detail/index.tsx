@@ -17,13 +17,13 @@ const TransactionsDetail = () => {
     const [data, setData] = useState<any>({})
     const { copy, copied } = useClipboard();
     useEffect(() => {
-
-        fetchQueryCrossInfoById(306321).then((res) => {
+        if(router?.query?.id)
+        fetchQueryCrossInfoById(router.query.id).then((res) => {
             setData(res.data)
             console.log(res.data)
         })
 
-    }, [])
+    }, [router?.query?.id])
 
     return (
         <div className={styles.body}>
@@ -151,10 +151,10 @@ const TransactionsDetail = () => {
                                         src={data?.sourceInfo?.chainInfo?.chainImg}
                                         alt="map" />
 
-                                    {ellipsis(data?.sourceInfo?.contract)}
+                                    {ellipsis(data?.sourceInfo?.chainInfo?.mosContract)}
                                     <Image
                                         onClick={() => {
-                                            copy(data?.sourceInfo?.contract)
+                                            copy(data?.sourceInfo?.chainInfo?.mosContract)
                                         }}
                                         style={{
                                             cursor: 'pointer'
@@ -166,7 +166,7 @@ const TransactionsDetail = () => {
                                     <Image
                                         onClick={() => {
                                             openLink(data?.sourceInfo?.chainInfo?.chainName,
-                                                data?.sourceInfo?.contract,
+                                                data?.sourceInfo?.chainInfo?.mosContract,
                                                 'address',
                                                 data?.sourceInfo?.chainInfo?.scanUrl)
                                         }}
